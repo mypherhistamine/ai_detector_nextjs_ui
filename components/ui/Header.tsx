@@ -1,10 +1,8 @@
 'use client'
 
 import React from 'react'
-import { useRouter, usePathname } from 'next/navigation'
-import { ClipboardIcon, Menu, User } from "lucide-react"
+import { Menu, User } from "lucide-react"
 import { useState } from 'react'
-
 
 import Link from 'next/link'
 

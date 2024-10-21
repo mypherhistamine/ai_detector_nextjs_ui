@@ -1,0 +1,59 @@
+{
+	"uid": "mypher89002",
+	"inputText": "Venus, the second planet from the sun, is often referred to as Earth's sister planet due to its similar size, composition, and proximity to the sun. However, despite these similarities, Venus is a world of extreme conditions. It is shrouded in a thick atmosphere composed primarily of carbon dioxide with clouds of sulfuric acid, creating a runaway greenhouse effect that makes it the hottest planet in our solar system. Surface temperatures on Venus can reach a scorching 900 degrees Fahrenheit (475 degrees Celsius), which is hotter than Mercury, despite being farther from the sun. The surface of Venus is rocky and mountainous, with vast plains covered in volcanic features such as lava channels and shield volcanoes. The planet has no moons and rotates very slowly, taking about 243 Earth days to complete one rotation. Additionally, Venus has a very thick atmosphere that exerts a surface pressure over 90 times that of Earth, making it a challenging environment for exploration.",
+	"sentences": [
+		{
+			"sentence": "Venus, the second planet from the sun, is often referred to as Earth's sister planet due to its similar size, composition, and proximity to the sun.",
+			"class": "AI",
+			"score": 6,
+			"startIndex": 0,
+			"endIndex": 149
+		},
+		{
+			"sentence": "However, despite these similarities, Venus is a world of extreme conditions.",
+			"class": "AI",
+			"score": 19,
+			"startIndex": 149,
+			"endIndex": 226
+		},
+		{
+			"sentence": "It is shrouded in a thick atmosphere composed primarily of carbon dioxide with clouds of sulfuric acid, creating a runaway greenhouse effect that makes it the hottest planet in our solar system.",
+			"class": "AI",
+			"score": 23,
+			"startIndex": 226,
+			"endIndex": 421
+		},
+		{
+			"sentence": "Surface temperatures on Venus can reach a scorching 900 degrees Fahrenheit 475 degrees Celsius, which is hotter than Mercury, despite being farther from the sun.",
+			"class": "AI",
+			"score": 22,
+			"startIndex": 421,
+			"endIndex": 583
+		},
+		{
+			"sentence": "The surface of Venus is rocky and mountainous, with vast plains covered in volcanic features such as lava channels and shield volcanoes.",
+			"class": "AI",
+			"score": 14.000000000000002,
+			"startIndex": 583,
+			"endIndex": 720
+		},
+		{
+			"sentence": "The planet has no moons and rotates very slowly, taking about 243 Earth days to complete one rotation.",
+			"class": "AI",
+			"score": 11,
+			"startIndex": 720,
+			"endIndex": 823
+		},
+		{
+			"sentence": "Additionally, Venus has a very thick atmosphere that exerts a surface pressure over 90 times that of Earth, making it a challenging environment for exploration.",
+			"class": "AI",
+			"score": 15,
+			"startIndex": 823,
+			"endIndex": 983
+		}
+	],
+	"overAllLabel": "AI",
+	"overallScore": 15.714285714285714,
+	"timeStamp": 1729530862,
+	"responseTime": "0.1536 seconds"
+}
