@@ -1,14 +1,15 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
-import { ClipboardIcon } from "lucide-react"
 import { RequestText, SampleTextType } from 'models/request_text'
 import { Classification, ResponseText } from 'models/response_text'
 import { getInputTextResponse } from 'controllers/api_caller'
+import CustomToolTip from '@/components/ui/CustomTooltip'
 export default function AITextCheckerWithRouting() {
 
+  const textareaRef = useRef<HTMLTextAreaElement>(null); // Create a ref
   const [text, setText] = useState('')
   const [responseText, setResponseText] = useState<ResponseText | null>(null);
   const [isWaiting, setIsWaiting] = useState(true)
@@ -47,7 +48,6 @@ export default function AITextCheckerWithRouting() {
   }
 
   const handleCheck = async () => {
-    // Implement AI checking logic here
     console.log('Checking for AI...')
     const requestObject: RequestText = {
       timeStamp: Date.now(),
@@ -55,15 +55,15 @@ export default function AITextCheckerWithRouting() {
       userId: 'mypher0123',
       sampleTextType: SampleTextType.USER
     }
-
     const responseText: ResponseText = await getInputTextResponse(requestObject);
     setResponseText(responseText);
-
+    // setIsSheetOpen(true);
   }
 
   const handleClear = () => {
     console.log("Clearing the text");
     setText('');
+    setResponseText(null);
   }
 
 
@@ -73,10 +73,23 @@ export default function AITextCheckerWithRouting() {
     setText("This is a humanized text")
   }
 
+  const getRgbColor = (classification: Classification, score: number) => {
+    // let scoreFinal = 1;
+    // // if (score === 0) scoreFinal = 0.5;
+
+    return classification === Classification.AI ? `#bf0603` : `#226f54`
+  }
+
+  const onSpanSelect = (startIndex: number, endIndex: number) => {
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+      textareaRef.current.setSelectionRange(startIndex, endIndex);
+    }
+  }
+
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-gray-900">
-
       {isSheetOpen && (
         <div className="fixed inset-0 overflow-hidden z-50">
           <div className="absolute inset-0 overflow-hidden">
@@ -114,40 +127,50 @@ export default function AITextCheckerWithRouting() {
         </div>
       )}
 
-      <div className='flex-grow p-6'>
-        <div className="flex flex-col space-y-4 max-w-4xl mx-auto">
+
+
+      <div className="flex flex-col space-y-2 mx-auto mt-8 pl-[10%] pr-[10%]">
+        <div className="flex space-x-4"> {/* Flex container for side-by-side layout */}
           <textarea
+            ref={textareaRef}
             placeholder="PASTE YOUR TEXT HERE"
-            className="flex-grow min-h-[300px] resize-none border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            value={text}
+            className="flex-1 min-h-[300px] resize-none border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent leading-[1.75] shadow-inner text-lg"
+            value={`${text}`}
             onChange={handleTextChange}
           />
-          <div className="space-y-2">
-            <p className="text-sm font-medium text-gray-700">Try sample text:</p>
-            <div className="flex flex-wrap gap-2">
-              {sampleTexts.map((sample) => (
-                <button
-                  key={sample.name}
-                  className="px-3 py-1 bg-white text-gray-700 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  onClick={() => handleSampleText(sample.text)}
-                >
-                  {sample.name}
-                </button>
-              ))}
-              <button
-                className="px-3 py-1 bg-white text-gray-700 border border-gray-300 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex items-center"
-                onClick={handlePaste}
-              >
-                <ClipboardIcon className="w-4 h-4 mr-2" />
-                Paste Your Text
-              </button>
+          {responseText ?
+            <div
+              className="flex-1 min-h-[300px] border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent overflow-y-scroll leading-8 shadow-inner text-lg" // Adjusted width with flex-1
+              contentEditable={true} // Change to true if you want to allow user editing
+            >
+              {
+                responseText.sentences.map((sentence, index) => (
+                  <CustomToolTip tooltip={`${sentence.score} %`}>
+                    {/* <span className="bg-gray-900 text-white p-3 rounded"> */}
+                    {/*   Show Me Tooltip */}
+                    {/* </span> */}
+                    <span
+                      key={index}
+                      className={`inline mr-1 cursor-pointer bg-[B7E0FF] hover:bg-gray-100 hover:shadow-md hover:p-2 hover:text-white hover:z-40 leading-8`} // Inline block for better layout control
+                      style={{
+                        color: getRgbColor(sentence.class, sentence.score)
+                      }}
+                      onClick={() => onSpanSelect(sentence.startIndex, sentence.endIndex)}
+                    >
+                      {sentence.sentence}
+                    </span>
+                  </CustomToolTip>
+                ))
+              }
             </div>
-          </div>
+            : null}
+
         </div>
+      </div>
+
+      <div className='flex-grow p-6'>
         <div className="flex items-center justify-between max-w-4xl mx-auto mt-6">
-          <div className="text-sm font-medium text-gray-700">
-            {isWaiting ? 'WAITING FOR YOUR INPUT' : 'READY TO ANALYZE'}
-          </div>
+          <div></div>
           <div className="space-x-2">
 
             <button
@@ -171,33 +194,7 @@ export default function AITextCheckerWithRouting() {
             </button>
           </div>
         </div>
-
-        <div>
-          {
-            responseText ? (
-              <div>
-                {/* map every sentence response */}
-                {
-                  responseText.sentences.map((sentence, index) => {
-                    return (
-                      <span
-                        key={index}
-                        style={{
-                          color: sentence.class === Classification.AI
-                            ? `rgba(255, 51, 0, .${sentence.score})` // Use template literals to format rgba string
-                            : "green"
-                        }}
-                      >
-                        {sentence.sentence}
-                      </span>
-                    )
-                  })
-                }
-              </div>
-            ) : null
-          }
-        </div>
       </div>
-    </div>
+    </div >
   )
 }

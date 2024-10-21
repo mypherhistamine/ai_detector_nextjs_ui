@@ -10,6 +10,8 @@ export interface Sentence {
         sentence: string;
         class: Classification;
         score: number;
+        startIndex: number;
+        endIndex: number;
 }
 
 export enum Classification {
