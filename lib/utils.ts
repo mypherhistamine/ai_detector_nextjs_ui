@@ -12,9 +12,9 @@ export const sampleResponse: ResponseText = {
   inputText: "",
   sentences: [],
   overAllLabel: Classification.AI,
-  overAllScore: 0
+  overallScore: 0
 }
 
-export const API_SERVER_BASE = "https://oakland-trap-exciting-brooklyn.trycloudflare.com";
-export const CLASSIFY_API_ENDPOINT = `${API_SERVER_BASE}/classify`;
+export const API_SERVER_BASE = "https://biggest-stronger-dedicated-producers.trycloudflare.com/";
+export const CLASSIFY_API_ENDPOINT = `${API_SERVER_BASE}classify`;
 

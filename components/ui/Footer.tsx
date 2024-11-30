@@ -19,22 +19,22 @@ const Footer = () => {
 							<path d="M145.923 24.7231V18.3231C145.923 17.9046 145.894 17.441 145.836 16.9323C145.778 16.4236 145.64 15.9354 145.424 15.4677C145.217 14.9918 144.901 14.6021 144.477 14.2985C144.061 13.9949 143.496 13.8431 142.782 13.8431C142.399 13.8431 142.021 13.9046 141.647 14.0277C141.273 14.1508 140.933 14.3641 140.625 14.6677C140.326 14.9631 140.085 15.3733 139.902 15.8985C139.719 16.4154 139.628 17.08 139.628 17.8923L137.845 17.1415C137.845 16.0092 138.065 14.9836 138.506 14.0646C138.955 13.1456 139.611 12.4154 140.475 11.8738C141.34 11.3241 142.403 11.0492 143.667 11.0492C144.664 11.0492 145.487 11.2133 146.135 11.5415C146.783 11.8697 147.298 12.2882 147.681 12.7969C148.063 13.3056 148.345 13.8472 148.528 14.4215C148.711 14.9959 148.827 15.5415 148.877 16.0585C148.936 16.5672 148.965 16.9815 148.965 17.3015V24.7231H145.923ZM136.586 24.7231V11.4308H139.266V15.5538H139.628V24.7231H136.586Z" fill="#111827" />
 							<path d="M157.87 25.0923C156.507 25.0923 155.31 24.801 154.28 24.2185C153.249 23.6359 152.443 22.8277 151.861 21.7938C151.288 20.76 151.001 19.5703 151.001 18.2246C151.001 16.7723 151.284 15.5128 151.849 14.4462C152.414 13.3713 153.199 12.5385 154.205 11.9477C155.21 11.3569 156.374 11.0615 157.695 11.0615C159.091 11.0615 160.276 11.3856 161.248 12.0338C162.229 12.6738 162.956 13.5805 163.43 14.7538C163.903 15.9272 164.082 17.3097 163.966 18.9015H160.986V17.8185C160.978 16.3744 160.72 15.32 160.213 14.6554C159.706 13.9908 158.909 13.6585 157.82 13.6585C156.59 13.6585 155.676 14.0359 155.078 14.7908C154.479 15.5374 154.18 16.6328 154.18 18.0769C154.18 19.4226 154.479 20.4646 155.078 21.2031C155.676 21.9415 156.548 22.3108 157.695 22.3108C158.435 22.3108 159.071 22.1508 159.603 21.8308C160.143 21.5026 160.558 21.0308 160.849 20.4154L163.816 21.3015C163.301 22.4995 162.503 23.4308 161.423 24.0954C160.351 24.76 159.166 25.0923 157.87 25.0923ZM153.233 18.9015V16.6615H162.495V18.9015H153.233Z" fill="#111827" />
 							<path d="M24.5473 11.8941C25.1905 12.5063 25.2068 13.5149 24.5837 14.1468L18.7585 20.054C18.1354 20.686 17.1087 20.702 16.4654 20.0898C15.8222 19.4776 15.8059 18.469 16.429 17.8371L22.2542 11.9299C22.8773 11.2979 23.904 11.2819 24.5473 11.8941Z" fill="url(#paint0_linear_9129_4680)" />
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.54673C0 2.03564 2.07211 0 4.62819 0H21.5399V0.00124069C28.9908 0.0998525 35 6.06429 35 13.4075C35 20.8123 28.8897 26.8151 21.3523 26.8151C18.6648 26.8151 16.1587 26.052 14.0463 24.7342L6.58815 31.9057C4.13431 34.2652 0 32.5573 0 29.1841V4.54673ZM11.5194 22.7055C9.15709 20.295 7.70452 17.0179 7.70452 13.4075C7.70452 12.5277 8.43056 11.8144 9.32619 11.8144C10.2218 11.8144 10.9479 12.5277 10.9479 13.4075C10.9479 19.0526 15.6061 23.6288 21.3523 23.6288C27.0985 23.6288 31.7567 19.0526 31.7567 13.4075C31.7567 7.76248 27.0985 3.18626 21.3523 3.18626H4.62819C3.86336 3.18626 3.24334 3.79536 3.24334 4.54673V29.1841C3.24334 29.7351 3.91866 30.014 4.31948 29.6286L11.5194 22.7055Z" fill="url(#paint1_linear_9129_4680)" />
+							<path fillRule="evenodd" clipRule="evenodd" d="M0 4.54673C0 2.03564 2.07211 0 4.62819 0H21.5399V0.00124069C28.9908 0.0998525 35 6.06429 35 13.4075C35 20.8123 28.8897 26.8151 21.3523 26.8151C18.6648 26.8151 16.1587 26.052 14.0463 24.7342L6.58815 31.9057C4.13431 34.2652 0 32.5573 0 29.1841V4.54673ZM11.5194 22.7055C9.15709 20.295 7.70452 17.0179 7.70452 13.4075C7.70452 12.5277 8.43056 11.8144 9.32619 11.8144C10.2218 11.8144 10.9479 12.5277 10.9479 13.4075C10.9479 19.0526 15.6061 23.6288 21.3523 23.6288C27.0985 23.6288 31.7567 19.0526 31.7567 13.4075C31.7567 7.76248 27.0985 3.18626 21.3523 3.18626H4.62819C3.86336 3.18626 3.24334 3.79536 3.24334 4.54673V29.1841C3.24334 29.7351 3.91866 30.014 4.31948 29.6286L11.5194 22.7055Z" fill="url(#paint1_linear_9129_4680)" />
 							<defs>
 								<linearGradient id="paint0_linear_9129_4680" x1="35" y1="1.89063" x2="1.11152" y2="33.4573" gradientUnits="userSpaceOnUse">
-									<stop stop-color="#7C3AED" />
-									<stop offset="0.993738" stop-color="#4F46E5" />
+									<stop stopColor="#7C3AED" />
+									<stop offset="0.993738" stopColor="#4F46E5" />
 								</linearGradient>
 								<linearGradient id="paint1_linear_9129_4680" x1="35" y1="1.89063" x2="1.11152" y2="33.4573" gradientUnits="userSpaceOnUse">
-									<stop stop-color="#7C3AED" />
-									<stop offset="0.993738" stop-color="#4F46E5" />
+									<stop stopColor="#7C3AED" />
+									<stop offset="0.993738" stopColor="#4F46E5" />
 								</linearGradient>
 							</defs>
 						</svg>
 					</a>
 					<p className="py-8 text- text-black lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Follow us on social media.</p>
 					<div className="flex mt-4 space-x-4 justify-center lg:justify-start sm:mt-0 ">
-						<a href="javascript:;" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
+						<a href="/" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
 							<svg className="text-black" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
 								<g id="Social Media">
 									<path id="Vector" d="M11.3214 8.93654L16.4919 3.05554H15.2667L10.7772 8.16193L7.1914 3.05554H3.05566L8.47803 10.7773L3.05566 16.9444H4.28097L9.022 11.5519L12.8088 16.9444H16.9446L11.3211 8.93654H11.3214ZM9.64322 10.8453L9.09382 10.0764L4.72246 3.95809H6.60445L10.1322 8.89578L10.6816 9.66469L15.2672 16.0829H13.3852L9.64322 10.8456V10.8453Z" fill="currentColor" />
@@ -42,21 +42,21 @@ const Footer = () => {
 							</svg>
 
 						</a>
-						<a href="javascript:;" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
+						<a href="/" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
 							<svg className="w-[1.25rem] h-[1.125rem] text-white" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M4.70975 7.93663C4.70975 6.65824 5.76102 5.62163 7.0582 5.62163C8.35537 5.62163 9.40721 6.65824 9.40721 7.93663C9.40721 9.21502 8.35537 10.2516 7.0582 10.2516C5.76102 10.2516 4.70975 9.21502 4.70975 7.93663ZM3.43991 7.93663C3.43991 9.90608 5.05982 11.5025 7.0582 11.5025C9.05658 11.5025 10.6765 9.90608 10.6765 7.93663C10.6765 5.96719 9.05658 4.37074 7.0582 4.37074C5.05982 4.37074 3.43991 5.96719 3.43991 7.93663ZM9.97414 4.22935C9.97408 4.39417 10.0236 4.55531 10.1165 4.69239C10.2093 4.82946 10.3413 4.93633 10.4958 4.99946C10.6503 5.06259 10.8203 5.07916 10.9844 5.04707C11.1484 5.01498 11.2991 4.93568 11.4174 4.81918C11.5357 4.70268 11.6163 4.55423 11.649 4.39259C11.6817 4.23095 11.665 4.06339 11.6011 3.91109C11.5371 3.7588 11.4288 3.6286 11.2898 3.53698C11.1508 3.44536 10.9873 3.39642 10.8201 3.39635H10.8197C10.5955 3.39646 10.3806 3.48424 10.222 3.64043C10.0635 3.79661 9.97434 4.00843 9.97414 4.22935ZM4.21142 13.5892C3.52442 13.5584 3.15101 13.4456 2.90286 13.3504C2.57387 13.2241 2.33914 13.0738 2.09235 12.8309C1.84555 12.588 1.69278 12.3569 1.56527 12.0327C1.46854 11.7882 1.3541 11.4201 1.32287 10.7431C1.28871 10.0111 1.28189 9.79119 1.28189 7.93669C1.28189 6.08219 1.28927 5.86291 1.32287 5.1303C1.35416 4.45324 1.46944 4.08585 1.56527 3.84069C1.69335 3.51647 1.84589 3.28513 2.09235 3.04191C2.3388 2.79869 2.57331 2.64813 2.90286 2.52247C3.1509 2.42713 3.52442 2.31435 4.21142 2.28358C4.95417 2.24991 5.17729 2.24319 7.0582 2.24319C8.9391 2.24319 9.16244 2.25047 9.90582 2.28358C10.5928 2.31441 10.9656 2.42802 11.2144 2.52247C11.5434 2.64813 11.7781 2.79902 12.0249 3.04191C12.2717 3.2848 12.4239 3.51647 12.552 3.84069C12.6487 4.08513 12.7631 4.45324 12.7944 5.1303C12.8285 5.86291 12.8354 6.08219 12.8354 7.93669C12.8354 9.79119 12.8285 10.0105 12.7944 10.7431C12.7631 11.4201 12.6481 11.7881 12.552 12.0327C12.4239 12.3569 12.2714 12.5882 12.0249 12.8309C11.7784 13.0736 11.5434 13.2241 11.2144 13.3504C10.9663 13.4457 10.5928 13.5585 9.90582 13.5892C9.16306 13.6229 8.93994 13.6296 7.0582 13.6296C5.17645 13.6296 4.95395 13.6229 4.21142 13.5892ZM4.15307 1.03424C3.40294 1.06791 2.89035 1.18513 2.4427 1.3568C1.9791 1.53408 1.58663 1.77191 1.19446 2.1578C0.802277 2.54369 0.56157 2.93108 0.381687 3.38797C0.207498 3.82941 0.0885535 4.3343 0.0543922 5.07358C0.0196672 5.81402 0.0117188 6.05074 0.0117188 7.93663C0.0117188 9.82252 0.0196672 10.0592 0.0543922 10.7997C0.0885535 11.539 0.207498 12.0439 0.381687 12.4853C0.56157 12.9419 0.802334 13.3297 1.19446 13.7155C1.58658 14.1012 1.9791 14.3387 2.4427 14.5165C2.89119 14.6881 3.40294 14.8054 4.15307 14.839C4.90479 14.8727 5.1446 14.8811 7.0582 14.8811C8.9718 14.8811 9.212 14.8732 9.96332 14.839C10.7135 14.8054 11.2258 14.6881 11.6737 14.5165C12.137 14.3387 12.5298 14.1014 12.9219 13.7155C13.3141 13.3296 13.5543 12.9419 13.7347 12.4853C13.9089 12.0439 14.0284 11.539 14.062 10.7997C14.0962 10.0587 14.1041 9.82252 14.1041 7.93663C14.1041 6.05074 14.0962 5.81402 14.062 5.07358C14.0278 4.33424 13.9089 3.82913 13.7347 3.38797C13.5543 2.93135 13.3135 2.5443 12.9219 2.1578C12.5304 1.7713 12.137 1.53408 11.6743 1.3568C11.2258 1.18513 10.7135 1.06735 9.96388 1.03424C9.21256 1.00058 8.97236 0.992188 7.05876 0.992188C5.14516 0.992188 4.90479 1.00002 4.15307 1.03424Z" fill="currentColor" />
 							</svg>
 
 						</a>
-						<a href="javascript:;" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
+						<a href="/" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
 							<svg className="w-[1rem] h-[1rem] text-white" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M2.8794 11.5527V3.86835H0.318893V11.5527H2.87967H2.8794ZM1.59968 2.81936C2.4924 2.81936 3.04817 2.2293 3.04817 1.49188C3.03146 0.737661 2.4924 0.164062 1.61666 0.164062C0.74032 0.164062 0.167969 0.737661 0.167969 1.49181C0.167969 2.22923 0.723543 2.8193 1.5829 2.8193H1.59948L1.59968 2.81936ZM4.29668 11.5527H6.85698V7.26187C6.85698 7.03251 6.87369 6.80255 6.94134 6.63873C7.12635 6.17968 7.54764 5.70449 8.25514 5.70449C9.18141 5.70449 9.55217 6.4091 9.55217 7.44222V11.5527H12.1124V7.14672C12.1124 4.78652 10.8494 3.68819 9.16483 3.68819C7.78372 3.68819 7.17715 4.45822 6.84014 4.98267H6.85718V3.86862H4.29681C4.33023 4.5895 4.29661 11.553 4.29661 11.553L4.29668 11.5527Z" fill="currentColor" />
 							</svg>
 
 						</a>
-						<a href="javascript:;" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
+						<a href="/" className="w-9 h-9 rounded-full bg-indigo-600 flex justify-center items-center hover:bg-indigo-600">
 							<svg className="w-[1.25rem] h-[0.875rem] text-white" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.9346 1.13529C14.5684 1.30645 15.0665 1.80588 15.2349 2.43896C15.5413 3.58788 15.5413 5.98654 15.5413 5.98654C15.5413 5.98654 15.5413 8.3852 15.2349 9.53412C15.0642 10.1695 14.5661 10.669 13.9346 10.8378C12.7886 11.1449 8.19058 11.1449 8.19058 11.1449C8.19058 11.1449 3.59491 11.1449 2.44657 10.8378C1.81277 10.6666 1.31461 10.1672 1.14622 9.53412C0.839844 8.3852 0.839844 5.98654 0.839844 5.98654C0.839844 5.98654 0.839844 3.58788 1.14622 2.43896C1.31695 1.80353 1.81511 1.30411 2.44657 1.13529C3.59491 0.828125 8.19058 0.828125 8.19058 0.828125C8.19058 0.828125 12.7886 0.828125 13.9346 1.13529ZM10.541 5.98654L6.72178 8.19762V3.77545L10.541 5.98654Z" fill="currentColor" />
+								<path fillRule="evenodd" clipRule="evenodd" d="M13.9346 1.13529C14.5684 1.30645 15.0665 1.80588 15.2349 2.43896C15.5413 3.58788 15.5413 5.98654 15.5413 5.98654C15.5413 5.98654 15.5413 8.3852 15.2349 9.53412C15.0642 10.1695 14.5661 10.669 13.9346 10.8378C12.7886 11.1449 8.19058 11.1449 8.19058 11.1449C8.19058 11.1449 3.59491 11.1449 2.44657 10.8378C1.81277 10.6666 1.31461 10.1672 1.14622 9.53412C0.839844 8.3852 0.839844 5.98654 0.839844 5.98654C0.839844 5.98654 0.839844 3.58788 1.14622 2.43896C1.31695 1.80353 1.81511 1.30411 2.44657 1.13529C3.59491 0.828125 8.19058 0.828125 8.19058 0.828125C8.19058 0.828125 12.7886 0.828125 13.9346 1.13529ZM10.541 5.98654L6.72178 8.19762V3.77545L10.541 5.98654Z" fill="currentColor" />
 							</svg>
 
 						</a>
@@ -65,37 +65,37 @@ const Footer = () => {
 				<div className="lg:mx-auto text-center sm:text-left">
 					<h4 className="text-lg text-black font-bold mb-7">{companyName}</h4>
 					<ul className="text-sm  transition-all duration-500">
-						<li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Home</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">About</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Pricing</a></li>
-						<li><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Features</a></li>
+						<li className="mb-6"><a href="/" className="text-gray-600 hover:text-gray-900">Home</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">About</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">Pricing</a></li>
+						<li><a href="/" className=" text-gray-600 hover:text-gray-900">Features</a></li>
 					</ul>
 				</div>
 				<div className="lg:mx-auto text-center sm:text-left">
 					<h4 className="text-lg text-black font-bold mb-7">Products</h4>
 					<ul className="text-sm  transition-all duration-500">
-						<li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Figma UI System</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Icons Assets</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Responsive Blocks</a></li>
-						<li><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Components Library</a></li>
+						<li className="mb-6"><a href="/" className="text-gray-600 hover:text-gray-900">Figma UI System</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">Icons Assets</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">Responsive Blocks</a></li>
+						<li><a href="/" className=" text-gray-600 hover:text-gray-900">Components Library</a></li>
 					</ul>
 				</div>
 				<div className="lg:mx-auto text-center sm:text-left">
 					<h4 className="text-lg text-black font-bold mb-7">Resources</h4>
 					<ul className="text-sm  transition-all duration-500">
-						<li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">FAQs</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Quick Start</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Documentation</a></li>
-						<li><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">User Guide</a></li>
+						<li className="mb-6"><a href="/" className="text-gray-600 hover:text-gray-900">FAQs</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">Quick Start</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">Documentation</a></li>
+						<li><a href="/" className=" text-gray-600 hover:text-gray-900">User Guide</a></li>
 					</ul>
 				</div>
 				<div className="lg:mx-auto text-center sm:text-left">
 					<h4 className="text-lg text-black font-bold mb-7">Blogs</h4>
 					<ul className="text-sm  transition-all duration-500">
-						<li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">News</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Tips & Tricks</a></li>
-						<li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">New Updates</a></li>
-						<li><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Events</a></li>
+						<li className="mb-6"><a href="/" className="text-gray-600 hover:text-gray-900">News</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">Tips & Tricks</a></li>
+						<li className="mb-6"><a href="/" className=" text-gray-600 hover:text-gray-900">New Updates</a></li>
+						<li><a href="/" className=" text-gray-600 hover:text-gray-900">Events</a></li>
 					</ul>
 				</div>
 			</div>
@@ -103,9 +103,9 @@ const Footer = () => {
 				<div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
 					<span className="text-sm text-gray-500 ">©<a href="https://pagedone.io/">pagedone</a>2024, All rights reserved.</span>
 					<ul className="flex items-center gap-9 mt-4 lg:mt-0">
-						<li><a href="javascript:;" className="text-sm text-gray-500">Terms</a></li>
-						<li><a href="javascript:;" className="text-sm text-gray-500">Privacy</a></li>
-						<li><a href="javascript:;" className="text-sm text-gray-500">Cookies</a></li>
+						<li><a href="/" className="text-sm text-gray-500">Terms</a></li>
+						<li><a href="/" className="text-sm text-gray-500">Privacy</a></li>
+						<li><a href="/" className="text-sm text-gray-500">Cookies</a></li>
 					</ul>
 				</div>
 			</div>

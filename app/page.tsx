@@ -7,6 +7,8 @@ import { RequestText, SampleTextType } from 'models/request_text'
 import { Classification, ResponseText } from 'models/response_text'
 import { getInputTextResponse } from 'controllers/api_caller'
 import CustomToolTip from '@/components/ui/CustomTooltip'
+import { getAuth, signInAnonymously, UserCredential } from 'firebase/auth'
+import { auth } from './firebase/config'
 export default function AITextCheckerWithRouting() {
 
   const textareaRef = useRef<HTMLTextAreaElement>(null); // Create a ref
@@ -55,9 +57,14 @@ export default function AITextCheckerWithRouting() {
       userId: 'mypher0123',
       sampleTextType: SampleTextType.USER
     }
-    const responseText: ResponseText = await getInputTextResponse(requestObject);
-    setResponseText(responseText);
-    // setIsSheetOpen(true);
+    const responseText: ResponseText | null = await getInputTextResponse(requestObject);
+    if (responseText !== null) {
+      setResponseText(responseText);
+    }
+
+    //also try to anonymoucsly login
+    const userCredential: UserCredential = await signInAnonymously(auth);
+    console.log("The user credentials are -> ", userCredential);
   }
 
   const handleClear = () => {
@@ -130,7 +137,11 @@ export default function AITextCheckerWithRouting() {
 
 
       <div className="flex flex-col space-y-2 mx-auto mt-8 pl-[10%] pr-[10%]">
-        <div className="flex space-x-4"> {/* Flex container for side-by-side layout */}
+
+        {responseText?.uid ?
+          <h2>Overall Score is : {responseText?.overallScore}</h2> : null
+        }
+        <div className="flex space-x-2"> {/* Flex container for side-by-side layout */}
           <textarea
             ref={textareaRef}
             placeholder="PASTE YOUR TEXT HERE"
@@ -141,37 +152,39 @@ export default function AITextCheckerWithRouting() {
           {responseText ?
             <div
               className="flex-1 min-h-[300px] border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent overflow-y-scroll leading-8 shadow-inner text-lg" // Adjusted width with flex-1
-              contentEditable={true} // Change to true if you want to allow user editing
+              contentEditable={false} // Change to true if you want to allow user editing
             >
               {
-                responseText.sentences.map((sentence, index) => (
-                  <CustomToolTip tooltip={`${sentence.score} %`}>
+                responseText.sentences ? responseText.sentences.map((sentence, index) => (
+                  <CustomToolTip tooltip={`🧑 ${sentence.score}% 🤖 ${100 - sentence.score}%`} key={index}>
                     {/* <span className="bg-gray-900 text-white p-3 rounded"> */}
                     {/*   Show Me Tooltip */}
                     {/* </span> */}
                     <span
                       key={index}
-                      className={`inline mr-1 cursor-pointer bg-[B7E0FF] hover:bg-gray-100 hover:shadow-md hover:p-2 hover:text-white hover:z-40 leading-8`} // Inline block for better layout control
+                      className={`inline mr-1 cursor-pointer bg-[B7E0FF] hover:bg-black hover:shadow-md hover:p-1 hover:text-white hover:z-40 leading-8`} // Inline block for better layout control
                       style={{
                         color: getRgbColor(sentence.class, sentence.score)
                       }}
                       onClick={() => onSpanSelect(sentence.startIndex, sentence.endIndex)}
                     >
                       {sentence.sentence}
+                      {/* <br /> */}
                     </span>
                   </CustomToolTip>
-                ))
+                )) : null
               }
+
             </div>
             : null}
-
         </div>
       </div>
+
 
       <div className='flex-grow p-6'>
         <div className="flex items-center justify-between max-w-4xl mx-auto mt-6">
           <div></div>
-          <div className="space-x-2">
+          <div className="space-x-4">
 
             <button
               className="px-4 py-2 bg-white text-black-700 border border-gray-300 rounded-lg hover:bg-black hover:text-white focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-transparent"

@@ -3,7 +3,7 @@ export interface ResponseText {
         inputText: string;
         sentences: Sentence[]
         overAllLabel: Classification;
-        overAllScore: number;
+        overallScore: number;
 }
 
 export interface Sentence {
